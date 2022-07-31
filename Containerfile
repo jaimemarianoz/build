@@ -1,7 +1,5 @@
 FROM quay.io/jaimemarianoz/ubi:8.0
 
-MAINTAINER Jaime Zamudio <jzamudio@redhat.com>
-
 ENV HTTPD_VERSION=2.4 \
     PORT=8080 \
     USER=1001
