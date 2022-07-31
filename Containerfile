@@ -4,7 +4,7 @@ MAINTAINER Jaime Zamudio <jzamudio@redhat.com>
 
 ENV HTTPD_VERSION=2.4 \
     PORT=8080 \
-    USER-1001
+    USER=1001
 
 LABEL description="A custom Apache container based on UBI 8" \
       io.k8s.display-name="Apache httpd $HTTPD_VERSION" \
