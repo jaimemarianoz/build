@@ -12,7 +12,7 @@ LABEL description="A custom Apache container based on UBI 8" \
       io.openshift.tags="builder,httpd,httpd24"
 
 RUN yum install -y --nodocs --disableplugin=subscription-manager httpd && \
-    yum clean all --diasbleplugin=subscription-manager && \
+    yum clean all --disableplugin=subscription-manager && \
     sed -ri -e "/^Listen 80/c\Listen ${PORT}" /etc/httpd/conf/httpd.conf && \
     chgrp -R 0 /run/httpd /var/log/httpd && \
     chmod -R g=u /run/httpd /var/log/httpd
